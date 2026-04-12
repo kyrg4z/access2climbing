@@ -970,17 +970,24 @@ button {
 .team .section__subtitle { color: #4a5068; }
 .team__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 24px;
   margin-bottom: 40px;
 }
 .team__card {
+  grid-column: span 2;
   padding: 44px 24px;
   border-radius: var(--radius-lg);
   transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
   will-change: transform;
   background: #f5f6fa;
   border: 1px solid #e2e5ee;
+}
+.team__card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+.team__card:nth-child(5) {
+  grid-column: 4 / span 2;
 }
 .team__card:hover {
   border-color: var(--clr-accent);
@@ -1184,6 +1191,7 @@ button {
   .serve__grid { grid-template-columns: repeat(2, 1fr); }
   .donors__grid { grid-template-columns: 1fr; }
   .team__grid { grid-template-columns: repeat(2, 1fr); }
+  .team__card, .team__card:nth-child(4), .team__card:nth-child(5) { grid-column: span 1; }
   .expect__grid { grid-template-columns: 1fr; }
 }
 
