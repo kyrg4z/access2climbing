@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate &amp; Support — Access to Climbing</title>
+  <meta name="description" content="Support Access to Climbing — donate, sponsor a session, or become a community partner. Every dollar removes a barrier for youth in Waterloo Region." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="scroll-progress" class="scroll-progress"></div>
+  <canvas id="particles" class="particles-canvas"></canvas>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="main-nav" class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text">ACCESS<span class="accent">2</span>CLIMBING</span>
+      </a>
+      <button id="nav-toggle" class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-links" class="nav__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="donate.html" class="nav__active">Donate</a></li>
+        <li>
+          <a href="index.html#how-it-works" class="nav__cta">Sign Up Free</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <div class="page-header">
+    <div class="container">
+      <div class="section__label">Support Us</div>
+      <h1 class="section__title">Help a youth reach <span class="accent">new heights</span></h1>
+      <p class="section__subtitle">
+        Every session is 100% community-funded. Your support directly removes the barriers that keep youth out of sport.
+      </p>
+    </div>
+  </div>
+
+  <!-- ===================== DONATION CARDS ===================== -->
+  <section class="section donors" style="padding-top: 1;">
+    <div class="container">
+
+      <div class="donors__grid">
+
+        <div class="donors__card glass tilt-card reveal">
+          <div class="donors__card-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3>Donate</h3>
+          <p>A one-time or recurring donation through GoFundMe goes directly to entry fees, shoe rentals, chalk, and supervision costs for each session.</p>
+          <p style="margin-top: 8px; color: var(--clr-text-dim); font-size: var(--fs-sm);">You can also send an e-transfer to <a href="mailto:access2climbing@gmail.com" class="link">access2climbing@gmail.com</a></p>
+          <a href="https://gofund.me/8d9cdc7f2" target="_blank" rel="noopener" class="btn btn--primary magnetic-btn" style="margin-top: auto;">
+            Donate on GoFundMe
+          </a>
+        </div>
+
+        <div class="donors__card glass tilt-card reveal">
+          <div class="donors__card-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a4 4 0 00-8 0v2"/></svg>
+          </div>
+          <h3>Sponsor a Session</h3>
+          <p>Want to fund an entire session or provide in-kind support? Session sponsorships cover all costs for one group of youth and come with recognition on our channels.</p>
+          <p style="margin-top: 8px; color: var(--clr-text-dim); font-size: var(--fs-sm);">Ideal for local businesses, community foundations, and organizations.</p>
+          <a href="mailto:access2climbing@gmail.com" class="btn btn--outline magnetic-btn" style="margin-top: auto;">
+            Email to Sponsor
+          </a>
+        </div>
+
+        <div class="donors__card glass tilt-card reveal">
+          <div class="donors__card-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Become a Partner</h3>
+          <p>We're always looking for community organizations, schools, and gyms to collaborate with — to help us find eligible youth and expand our reach across Waterloo Region.</p>
+          <p style="margin-top: 8px; color: var(--clr-text-dim); font-size: var(--fs-sm);">Outreach inquiries welcome from all sectors.</p>
+          <a href="mailto:outreach.access2climbing@gmail.com" class="btn btn--outline magnetic-btn" style="margin-top: auto;">
+            Contact Outreach Team
+          </a>
+        </div>
+
+      </div>
+
+      <!-- PARTNER HIGHLIGHT -->
+      <div class="donors__partner-highlight glass reveal">
+        <div class="donors__partner-logo">
+          <img src="images/LOGO Waterloo (black).png" alt="Grand River Rocks Logo" style="max-width:120px;height:auto;" />
+        </div>
+        <div class="donors__partner-text">
+          <h3>Proud Partner</h3>
+          <p>
+            Our sessions are hosted at <a href="https://grandriverrocks.com/waterloo/" target="_blank" rel="noopener" class="link">Grand River Rocks — Waterloo</a>.
+            Follow them at <a href="https://www.instagram.com/grr_wat/" target="_blank" rel="noopener" class="link">@grr_wat</a> — a world-class facility and an incredible partner making all of this possible.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-text">ACCESS<span class="accent">2</span>CLIMBING</span>
+      </div>
+      <p class="footer__tagline">Breaking barriers. Building futures.</p>
+      <div class="footer__links">
+        <a href="https://www.instagram.com/access2climbing/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://gofund.me/8d9cdc7f2" target="_blank" rel="noopener" aria-label="GoFundMe">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </a>
+        <a href="mailto:access2climbing@gmail.com" aria-label="Email">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+      <nav class="footer__nav" style="display:flex;gap:24px;margin:8px 0;flex-wrap:wrap;justify-content:center;">
+        <a href="index.html" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">Home</a>
+        <a href="about.html" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">About</a>
+        <a href="faq.html" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">FAQ</a>
+        <a href="https://grandriverrocks.com/waterloo/" target="_blank" rel="noopener" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">Grand River Rocks</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 Access to Climbing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

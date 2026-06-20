@@ -4,36 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Access to Climbing — Free Bouldering for Youth | Waterloo Region</title>
-  <meta name="description" content="Free one-time bouldering sessions for youth aged 13-17 in Waterloo Region who face barriers to sport. Student-led, adult-supervised, launching April 2026." />
+  <meta name="description" content="Free one-time bouldering sessions for youth aged 13-17 in Waterloo Region. Shoes and chalk included. No experience needed. Sessions 3 and 4 now open." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- SCROLL PROGRESS BAR -->
   <div id="scroll-progress" class="scroll-progress"></div>
-
-  <!-- FLOATING PARTICLES CANVAS -->
   <canvas id="particles" class="particles-canvas"></canvas>
 
   <!-- ===================== NAV ===================== -->
   <nav id="main-nav" class="nav">
     <div class="nav__inner">
-      <a href="#" class="nav__logo">
+      <a href="index.html" class="nav__logo">
         <span class="nav__logo-text">ACCESS<span class="accent">2</span>CLIMBING</span>
       </a>
       <button id="nav-toggle" class="nav__toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
       <ul id="nav-links" class="nav__links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#participants">Participants</a></li>
-        <li><a href="#donors">Donors</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="https://gofund.me/8d9cdc7f2" target="_blank" rel="noopener" class="nav__cta">Donate</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li>
+          <a href="#how-it-works" class="nav__cta">Sign Up Free</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -41,7 +38,7 @@
   <!-- ===================== HERO ===================== -->
   <header id="hero" class="hero">
     <div class="hero__bg">
-      <img src="hero.png" alt="Youth bouldering at Grand River Rocks Waterloo" />
+      <img src="images/hero.png" alt="Youth bouldering at Grand River Rocks Waterloo" />
       <div class="hero__overlay"></div>
     </div>
     <div class="hero__content">
@@ -50,15 +47,13 @@
         <span class="hero__title-line">Free Bouldering</span>
         <span class="hero__title-line">for Youth <span class="accent">13–17</span></span>
       </h1>
-      <p class="hero__sub animate-in">
-        Breaking barriers. Building futures.
-      </p>
+      <p class="hero__sub animate-in">Breaking barriers. Building futures.</p>
       <p class="hero__desc animate-in">
-        Student-led &bull; Adult-supervised &bull; Grades 9–12 &bull; Launching April 2026
+        Student-led &bull; Adult-supervised &bull; Grades 9&ndash;12 &bull; Launching April 2026
       </p>
       <div class="hero__actions animate-in">
-        <a href="#participants" class="btn btn--primary magnetic-btn">Sign Up</a>
-        <a href="#donors" class="btn btn--outline magnetic-btn">Donate</a>
+        <a href="#how-it-works" class="btn btn--primary magnetic-btn">Sign Up</a>
+        <a href="donate.html" class="btn btn--outline magnetic-btn">Donate</a>
       </div>
     </div>
     <div class="hero__scroll-hint animate-in">
@@ -67,521 +62,207 @@
     </div>
   </header>
 
-  <!-- ===================== MISSION ===================== -->
-  <section id="mission" class="section mission">
+  <!-- ===================== QUICK FACTS ===================== -->
+  <div class="quickfacts">
+    <div class="quickfacts__inner">
+      <div class="quickfacts__item">
+        <span class="quickfacts__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </span>
+        <div class="quickfacts__text">
+          <strong>100% Free</strong>
+          <span>Entry, shoes, and chalk covered</span>
+        </div>
+      </div>
+      <div class="quickfacts__item">
+        <span class="quickfacts__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </span>
+        <div class="quickfacts__text">
+          <strong>Ages 13–17</strong>
+          <span>Waterloo Region youth</span>
+        </div>
+      </div>
+      <div class="quickfacts__item">
+        <span class="quickfacts__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.38 3.46L16 2l-4 4-4-4L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6l-1 8h14l-1-8h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"/></svg>
+        </span>
+        <div class="quickfacts__text">
+          <strong>Gear Provided</strong>
+          <span>Shoes &amp; chalk included</span>
+        </div>
+      </div>
+      <div class="quickfacts__item">
+        <span class="quickfacts__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </span>
+        <div class="quickfacts__text">
+          <strong>Beginner-Friendly</strong>
+          <span>Zero experience needed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section id="how-it-works" class="howit">
     <div class="container">
-      <div class="section__label reveal">Our Mission</div>
-      <h2 class="section__title reveal">Every youth deserves the chance to <span class="accent">climb</span></h2>
-      <p class="section__subtitle reveal">
-        We believe sport changes lives. Access to Climbing aims to remove financial, social, and cultural barriers 
-        so eligible youth in Waterloo Region can experience the confidence, community, and joy that bouldering brings.
-      </p>
-      <div class="mission__stats">
-        <div class="stat reveal">
-          <span class="stat__number" data-count="100">0</span><span class="stat__symbol">%</span>
-          <span class="stat__label">Free for Youth</span>
-        </div>
-        <div class="stat reveal">
-          <span class="stat__number">13–17</span>
-          <span class="stat__label">Age Range</span>
-        </div>
-        <div class="stat reveal">
-          <span class="stat__number">1</span>
-          <span class="stat__label">Free Session Per Youth</span>
-        </div>
-        <div class="stat reveal">
-          <span class="stat__number">No</span><span class="stat__symbol"> Experience</span>
-          <span class="stat__label">Required</span>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="section__label reveal">How It Works</div>
+      <h2 class="section__title reveal">Three steps to your <span class="accent">first climb</span></h2>
 
-  <!-- ===================== ABOUT ===================== -->
-  <section id="about" class="section about">
-    <div class="container about__grid">
-      <div class="about__text">
-        <div class="section__label reveal">About the Project</div>
-        <h2 class="section__title reveal">Creating safe spaces to <span class="accent">grow</span></h2>
-        <p class="reveal">
-          Access to Climbing creates <strong>free, one-time bouldering sessions</strong> for high school students aged 13–17 in Waterloo Region who face financial, social, or cultural barriers to sport.
-        </p>
-        <p class="reveal">
-          Sessions are beginner-level, fully funded through community grants and donations, and supervised by certified gym staff and an adult advisor.
-        </p>
-        <p class="reveal">
-          Hosted at <a href="https://grandriverrocks.com/waterloo/" target="_blank" rel="noopener" class="link">Grand River Rocks — Waterloo</a> and partnered with <a href="https://www.instagram.com/grr_wat/" target="_blank" rel="noopener" class="link">@grr_wat</a>
-        </p>
-      </div>
-      <div class="about__visual">
-        <div class="about__card glass tilt-card reveal">
-          <div class="about__card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2l4 4-4 4"/><path d="M18 6H6a4 4 0 00-4 4v4"/><path d="M10 22l-4-4 4-4"/><path d="M6 18h12a4 4 0 004-4v-4"/></svg>
-          </div>
-          <h3>Beginner-Friendly</h3>
-          <p>No prior experience or equipment needed — we provide everything.</p>
-        </div>
-        <div class="about__card glass tilt-card reveal">
-          <div class="about__card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Safe &amp; Supervised</h3>
-          <p>Certified gym staff + adult advisor at every session.</p>
-        </div>
-        <div class="about__card glass tilt-card reveal">
-          <div class="about__card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-          </div>
-          <h3>Fully Funded</h3>
-          <p>Community grants and donations cover 100% of costs.</p>
-        </div>
-        <div class="about__card glass tilt-card reveal">
-          <div class="about__card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          </div>
-          <h3>Student-Led</h3>
-          <p>Designed and run by students, for students.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="howit__steps">
 
-  <!-- ===================== OUR STORY ===================== -->
-  <section id="our-story" class="section story">
-    <div class="container about__grid">
-      <div class="about__text">
-        <div class="section__label reveal">Our Story</div>
-        <h2 class="section__title reveal">A personal journey to <span class="accent">inclusion</span></h2>
-        <p class="reveal">
-          Access to Climbing was founded by Artur Tashbolotov, a Grade 11 student in Waterloo Region who found a home in rock climbing after traditional sports proved inaccessible. Unlike other environments, climbing was welcoming, accessible, and deeply rewarding.
-        </p>
-        <p class="reveal">
-          When Artur invited friends who also struggled to find their place in traditional athletics, the transformation was undeniable. They didn't just learn climbing skills—they built physical capability, confidence, and strong friendships, curing their feelings of loneliness.
-        </p>
-        <p class="reveal">
-          Access to Climbing exists to share this spark. Our goal is to extend this experience to youth who feel they don't fit into traditional spaces, offering them a clear path to self-belief and community.
-        </p>
-      </div>
-      <div class="about__visual">
-        <div class="about__card glass tilt-card reveal">
-          <div class="about__card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-          </div>
-          <h3>Combating Loneliness</h3>
-          <p>Providing a welcoming community space for youth to belong and build meaningful connections.</p>
-        </div>
-        <div class="about__card glass tilt-card reveal">
-          <div class="about__card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-          </div>
-          <h3>Building Confidence</h3>
-          <p>A non-intimidating environment to conquer challenges and realize personal potential.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== WHO WE SERVE ===================== -->
-  <section id="who-we-serve" class="section serve">
-    <div class="container">
-      <div class="section__label reveal">Who We Serve</div>
-      <h2 class="section__title reveal">Built for youth who need it <span class="accent">most</span></h2>
-      <div class="serve__grid">
-        <div class="serve__card tilt-card reveal">
-          <div class="serve__icon">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-          </div>
-          <h3>Newcomer &amp; Refugee Youth</h3>
-          <p>Adjusting to life in a new community — climbing offers connection, belonging, and fun.</p>
-        </div>
-        <div class="serve__card tilt-card reveal">
-          <div class="serve__icon">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-          </div>
-          <h3>Low-Income Youth</h3>
-          <p>For whom paid activities are out of reach — every session is completely free.</p>
-        </div>
-        <div class="serve__card tilt-card reveal">
-          <div class="serve__icon">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-          </div>
-          <h3>Racialized Minority Youth</h3>
-          <p>Underrepresented in climbing spaces — we're changing that, one session at a time.</p>
-        </div>
-        <div class="serve__card tilt-card reveal">
-          <div class="serve__icon">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          </div>
-          <h3>Youth Seeking Belonging</h3>
-          <p>For those who don't fit into traditional team sports. Climbing offers a non-intimidating way to grow confidence and reduce loneliness.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       PARTICIPANTS / APPLICANTS SECTION
-       ============================================================ -->
-  <section id="participants" class="section participants">
-    <div class="container">
-      <div class="section__label reveal">For Participants</div>
-      <h2 class="section__title reveal">Ready to <span class="accent">climb</span>?</h2>
-      <p class="section__subtitle reveal">
-        Everything you need to sign up, prepare, and join a free one-time bouldering session at
-        <a href="https://grandriverrocks.com/waterloo/" target="_blank" rel="noopener" class="link">Grand River Rocks — Waterloo</a>.
-      </p>
-
-      <!-- SIGN UP -->
-      <div class="participants__block reveal">
-        <div class="participants__block-header">
-          <span class="participants__block-number">01</span>
+        <div class="howit__step reveal">
+          <div class="howit__step-num">01</div>
           <h3>Sign Up</h3>
+          <p>Fill out our Google Form. Spots are limited and confirmed on a first-come, first-served basis.</p>
+          <a href="https://forms.gle/spuPNvPjLQunp9zj8" target="_blank" rel="noopener" class="step-cta">
+            Open Form &rarr;
+          </a>
         </div>
-        <p>Open to all <strong>eligible youth</strong> ages 13–17 in Waterloo Region. Fill out the Google Form below to request a spot in an upcoming session.</p>
-        <div class="signup__notice glass" style="margin-bottom: 1rem;">
-          <span class="signup__notice-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          </span>
-          <p><strong>Session 1: April 30th.</strong> Registration is currently open! <br><strong>Session 2: End of May.</strong> Registration opens the first week of May.</p>
+
+        <div class="howit__arrow reveal">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </div>
-        <div class="signup__notice glass" style="margin-bottom: 1.5rem;">
-          <span class="signup__notice-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-          </span>
-          <p><strong>Program Goal:</strong> To provide youth a chance to try climbing for free. There is only one session available for everyone, allowing us to offer this initial experience to as many youth as possible.</p>
+
+        <div class="howit__step reveal">
+          <div class="howit__step-num">02</div>
+          <h3>Get Confirmed</h3>
+          <p>We'll reach out within 3 days by email or SMS. Complete both waivers before your session.</p>
         </div>
-        <a href="https://forms.gle/spuPNvPjLQunp9zj8" target="_blank" rel="noopener" class="btn btn--primary magnetic-btn" id="signup-btn">
-          Sign Up via Google Form
+
+        <div class="howit__arrow reveal">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+
+        <div class="howit__step reveal">
+          <div class="howit__step-num">03</div>
+          <h3>Show Up &amp; Climb</h3>
+          <p>Head to Grand River Rocks — Waterloo. Shoes and chalk are waiting. Just wear comfortable clothes.</p>
+        </div>
+
+      </div>
+
+      <div class="howit__waiver reveal">
+        <span class="howit__waiver-label">Waivers required</span>
+        <a href="https://grandriverrocks.com/waterloo/waiver/" target="_blank" rel="noopener" class="btn btn--outline magnetic-btn" style="padding: 10px 22px; font-size: var(--fs-sm);">
+          GRR Waterloo Waiver
+        </a>
+        <a href="https://forms.gle/V6w7KvLhmsBpQyx16" target="_blank" rel="noopener" class="btn btn--outline magnetic-btn" style="padding: 10px 22px; font-size: var(--fs-sm);">
+          Access to Climbing Waiver
         </a>
       </div>
+    </div>
+  </section>
 
-      <!-- GET APPROVAL -->
-      <div class="participants__block reveal">
-        <div class="participants__block-header">
-          <span class="participants__block-number">02</span>
-          <h3>Get Approved</h3>
+  <!-- ===================== SESSION RECAPS ===================== -->
+  <section id="recaps" class="section recaps recaps--light">
+    <div class="container">
+      <div class="section__label reveal">Session Recaps</div>
+      <h2 class="section__title reveal">Two sessions down. <span class="accent">More to come.</span></h2>
+      <p class="section__subtitle reveal">
+        Follow <a href="https://www.instagram.com/access2climbing/" target="_blank" rel="noopener" class="link">@access2climbing</a> for the latest updates.
+      </p>
+
+      <div class="recaps__grid">
+
+        <div class="recaps__card reveal">
+          <div>
+            <div class="recaps__card-label">
+              Session 1
+              <span class="badge">Complete ✓</span>
+            </div>
+            <h3>April 30, 2026</h3>
+            <p>Our first ever session — a milestone moment for Access to Climbing and for every youth who stepped on the wall for the first time.</p>
+          </div>
+          <div class="recaps__embed-wrapper">
+            <blockquote class="instagram-media" data-instgrm-captioned
+              data-instgrm-permalink="https://www.instagram.com/p/DX9lmSalvz3/?utm_source=ig_embed&utm_campaign=loading"
+              data-instgrm-version="14"
+              style="background:#FFF;border:0;border-radius:14px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:0;max-width:100%;min-width:unset;padding:0;width:100%;">
+              <div style="padding:16px;">
+                <a href="https://www.instagram.com/p/DX9lmSalvz3/?utm_source=ig_embed&utm_campaign=loading" style="background:#FFFFFF;line-height:0;padding:0;text-align:center;text-decoration:none;width:100%;" target="_blank">
+                  <div style="display:flex;flex-direction:row;align-items:center;">
+                    <div style="background-color:#F4F4F4;border-radius:50%;flex-grow:0;height:40px;margin-right:14px;width:40px;"></div>
+                    <div style="display:flex;flex-direction:column;flex-grow:1;justify-content:center;">
+                      <div style="background-color:#F4F4F4;border-radius:4px;flex-grow:0;height:14px;margin-bottom:6px;width:100px;"></div>
+                      <div style="background-color:#F4F4F4;border-radius:4px;flex-grow:0;height:14px;width:60px;"></div>
+                    </div>
+                  </div>
+                  <div style="padding:19% 0;"></div>
+                  <div style="display:block;height:50px;margin:0 auto 12px;width:50px;">
+                    <svg width="50px" height="50px" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g transform="translate(-511 -20)" fill="#000"><path d="M556.869 30.41c-2.055 0-3.721 1.666-3.721 3.721s1.666 3.721 3.721 3.721 3.721-1.666 3.721-3.721-1.666-3.721-3.721-3.721M541 60.657c-5.886 0-10.658-4.77-10.658-10.657S535.114 39.342 541 39.342c5.887 0 10.658 4.772 10.658 10.658S546.887 60.657 541 60.657M541 33.886c-8.9 0-16.114 7.214-16.114 16.114s7.214 16.113 16.114 16.113S557.115 58.9 557.115 50c0-8.9-7.215-16.114-16.115-16.114M565.378 62.101c-.134 2.921-.622 4.505-1.032 5.562-.544 1.397-1.193 2.394-2.241 3.443-1.048 1.049-2.046 1.698-3.444 2.241-1.055.41-2.641.898-5.56 1.032-3.158.144-4.105.175-12.101.175-7.997 0-8.943-.031-12.101-.175-2.92-.134-4.505-.622-5.56-1.032-1.398-.543-2.395-1.192-3.444-2.241-1.048-1.049-1.697-2.046-2.241-3.443-.41-1.057-.898-2.641-1.032-5.562-.144-3.158-.175-4.105-.175-12.101 0-7.997.031-8.944.175-12.101.134-2.921.622-4.506 1.032-5.561.544-1.398 1.193-2.396 2.241-3.444 1.049-1.048 2.046-1.697 3.444-2.241 1.055-.41 2.64-.898 5.56-1.032C532.057 25.479 533.004 25.448 541 25.448c7.997 0 8.943.031 12.102.175 2.919.134 4.505.622 5.56 1.032 1.398.544 2.396 1.193 3.444 2.241 1.048 1.048 1.697 2.046 2.241 3.444.41 1.055.898 2.64 1.032 5.561.144 3.157.175 4.104.175 12.101s-.031 8.943-.175 12.101M570.82 37.631c-.146-3.193-.653-5.373-1.395-7.282-.766-1.972-1.792-3.647-3.46-5.314-1.668-1.667-3.342-2.693-5.313-3.46-1.909-.74-4.09-1.248-7.283-1.394C550.169 20.033 549.148 20 541 20c-8.147 0-9.169.033-12.369.18-3.193.146-5.374.654-7.282 1.395-1.973.767-3.647 1.793-5.315 3.46-1.667 1.667-2.693 3.342-3.46 5.314-.74 1.909-1.248 4.09-1.393 7.282C511.035 40.831 511 41.851 511 50c0 8.147.035 9.17.181 12.369.145 3.193.653 5.374 1.394 7.282.767 1.974 1.793 3.648 3.46 5.315 1.668 1.669 3.342 2.695 5.315 3.462 1.908.74 4.089 1.248 7.282 1.394C531.831 79.965 532.853 80 541 80s9.169-.035 12.369-.18c3.193-.146 5.374-.654 7.282-1.394 1.974-.767 3.648-1.793 5.315-3.462 1.667-1.667 2.693-3.341 3.46-5.315.741-1.908 1.249-4.089 1.395-7.282C570.966 59.17 571 58.147 571 50c0-8.149-.034-9.169-.18-12.369"/></g></g></svg>
+                  </div>
+                  <div style="padding-top:8px;"><div style="color:#3897f0;font-family:Arial,sans-serif;font-size:14px;font-weight:550;line-height:18px;">View this post on Instagram</div></div>
+                  <div style="padding:12.5% 0;"></div>
+                </a>
+                <p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;line-height:17px;margin:8px 0 0;overflow:hidden;padding:8px 0 7px;text-align:center;white-space:nowrap;">
+                  <a href="https://www.instagram.com/p/DX9lmSalvz3/?utm_source=ig_embed&utm_campaign=loading" style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;font-weight:normal;line-height:17px;text-decoration:none;" target="_blank">A post shared by Access to Climbing (@access2climbing)</a>
+                </p>
+              </div>
+            </blockquote>
+          </div>
         </div>
-        <p>After signing up, you will be notified via email or SMS within <strong>3 days</strong> regarding your approval.</p>
-        <div class="signup__notice glass" style="margin-top: 1rem;">
-          <span class="signup__notice-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-          </span>
-          <p><strong>Spots are limited.</strong> If the nearest session is full, you can opt to be booked for a session the following month!</p>
+
+        <div class="recaps__card reveal">
+          <div>
+            <div class="recaps__card-label">
+              Session 2
+              <span class="badge">Complete ✓</span>
+            </div>
+            <h3>May 2026</h3>
+            <p>More youth, more walls, same incredible energy. Session 2 proved this community needs — and wants — more of exactly this.</p>
+          </div>
+          <div class="recaps__embed-wrapper">
+            <blockquote class="instagram-media" data-instgrm-captioned
+              data-instgrm-permalink="https://www.instagram.com/p/DZBDxCvCTy6/?utm_source=ig_embed&utm_campaign=loading"
+              data-instgrm-version="14"
+              style="background:#FFF;border:0;border-radius:14px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:0;max-width:100%;min-width:unset;padding:0;width:100%;">
+              <div style="padding:16px;">
+                <a href="https://www.instagram.com/p/DZBDxCvCTy6/?utm_source=ig_embed&utm_campaign=loading" style="background:#FFFFFF;line-height:0;padding:0;text-align:center;text-decoration:none;width:100%;" target="_blank">
+                  <div style="display:flex;flex-direction:row;align-items:center;">
+                    <div style="background-color:#F4F4F4;border-radius:50%;flex-grow:0;height:40px;margin-right:14px;width:40px;"></div>
+                    <div style="display:flex;flex-direction:column;flex-grow:1;justify-content:center;">
+                      <div style="background-color:#F4F4F4;border-radius:4px;flex-grow:0;height:14px;margin-bottom:6px;width:100px;"></div>
+                      <div style="background-color:#F4F4F4;border-radius:4px;flex-grow:0;height:14px;width:60px;"></div>
+                    </div>
+                  </div>
+                  <div style="padding:19% 0;"></div>
+                  <div style="display:block;height:50px;margin:0 auto 12px;width:50px;">
+                    <svg width="50px" height="50px" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g transform="translate(-511 -20)" fill="#000"><path d="M556.869 30.41c-2.055 0-3.721 1.666-3.721 3.721s1.666 3.721 3.721 3.721 3.721-1.666 3.721-3.721-1.666-3.721-3.721-3.721M541 60.657c-5.886 0-10.658-4.77-10.658-10.657S535.114 39.342 541 39.342c5.887 0 10.658 4.772 10.658 10.658S546.887 60.657 541 60.657M541 33.886c-8.9 0-16.114 7.214-16.114 16.114s7.214 16.113 16.114 16.113S557.115 58.9 557.115 50c0-8.9-7.215-16.114-16.115-16.114M565.378 62.101c-.134 2.921-.622 4.505-1.032 5.562-.544 1.397-1.193 2.394-2.241 3.443-1.048 1.049-2.046 1.698-3.444 2.241-1.055.41-2.641.898-5.56 1.032-3.158.144-4.105.175-12.101.175-7.997 0-8.943-.031-12.101-.175-2.92-.134-4.505-.622-5.56-1.032-1.398-.543-2.395-1.192-3.444-2.241-1.048-1.049-1.697-2.046-2.241-3.443-.41-1.057-.898-2.641-1.032-5.562-.144-3.158-.175-4.105-.175-12.101 0-7.997.031-8.944.175-12.101.134-2.921.622-4.506 1.032-5.561.544-1.398 1.193-2.396 2.241-3.444 1.049-1.048 2.046-1.697 3.444-2.241 1.055-.41 2.64-.898 5.56-1.032C532.057 25.479 533.004 25.448 541 25.448c7.997 0 8.943.031 12.102.175 2.919.134 4.505.622 5.56 1.032 1.398.544 2.396 1.193 3.444 2.241 1.048 1.048 1.697 2.046 2.241 3.444.41 1.055.898 2.64 1.032 5.561.144 3.157.175 4.104.175 12.101s-.031 8.943-.175 12.101M570.82 37.631c-.146-3.193-.653-5.373-1.395-7.282-.766-1.972-1.792-3.647-3.46-5.314-1.668-1.667-3.342-2.693-5.313-3.46-1.909-.74-4.09-1.248-7.283-1.394C550.169 20.033 549.148 20 541 20c-8.147 0-9.169.033-12.369.18-3.193.146-5.374.654-7.282 1.395-1.973.767-3.647 1.793-5.315 3.46-1.667 1.667-2.693 3.342-3.46 5.314-.74 1.909-1.248 4.09-1.393 7.282C511.035 40.831 511 41.851 511 50c0 8.147.035 9.17.181 12.369.145 3.193.653 5.374 1.394 7.282.767 1.974 1.793 3.648 3.46 5.315 1.668 1.669 3.342 2.695 5.315 3.462 1.908.74 4.089 1.248 7.282 1.394C531.831 79.965 532.853 80 541 80s9.169-.035 12.369-.18c3.193-.146 5.374-.654 7.282-1.394 1.974-.767 3.648-1.793 5.315-3.462 1.667-1.667 2.693-3.341 3.46-5.315.741-1.908 1.249-4.089 1.395-7.282C570.966 59.17 571 58.147 571 50c0-8.149-.034-9.169-.18-12.369"/></g></g></svg>
+                  </div>
+                  <div style="padding-top:8px;"><div style="color:#3897f0;font-family:Arial,sans-serif;font-size:14px;font-weight:550;line-height:18px;">View this post on Instagram</div></div>
+                  <div style="padding:12.5% 0;"></div>
+                </a>
+                <p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;line-height:17px;margin:8px 0 0;overflow:hidden;padding:8px 0 7px;text-align:center;white-space:nowrap;">
+                  <a href="https://www.instagram.com/p/DZBDxCvCTy6/?utm_source=ig_embed&utm_campaign=loading" style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;font-weight:normal;line-height:17px;text-decoration:none;" target="_blank">A post shared by Access to Climbing (@access2climbing)</a>
+                </p>
+              </div>
+            </blockquote>
+          </div>
         </div>
+
       </div>
+    </div>
+  </section>
 
-      <!-- WAIVER -->
-      <div class="participants__block reveal">
-        <div class="participants__block-header">
-          <span class="participants__block-number">03</span>
-          <h3>Complete the Waiver</h3>
-        </div>
-        <p>All participants must complete and submit a signed waiver before their first session. If the participant is under 18, a parent or legal guardian must sign.</p>
-        <ul class="waiver__list">
-          <li><span class="check-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Acknowledgment of physical risks involved in bouldering</li>
-          <li><span class="check-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Emergency contact information</li>
-          <li><span class="check-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Photo / media release consent (optional)</li>
-          <li><span class="check-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Agreement to follow all gym rules and staff instructions</li>
-        </ul>
-        <a href="https://grandriverrocks.com/waterloo/waiver/" target="_blank" rel="noopener" class="btn btn--outline magnetic-btn" id="waiver-btn">
-          Complete Waiver at Grand River Rocks
+  <script async src="https://www.instagram.com/embed.js"></script>
+
+  <!-- ===================== DONOR STRIP ===================== -->
+  <div class="donor-strip">
+    <div class="donor-strip__inner">
+      <div class="donor-strip__text">
+        <h3>Every session is <span class="accent">community-funded</span></h3>
+        <p>100% of costs are covered by grants and donations. Help more youth in Waterloo Region climb for free.</p>
+      </div>
+      <div class="donor-strip__actions">
+        <a href="https://gofund.me/8d9cdc7f2" target="_blank" rel="noopener" class="btn btn--primary magnetic-btn">
+          Donate on GoFundMe
         </a>
-      </div>
-
-      <!-- WHAT TO EXPECT -->
-      <div class="participants__block reveal">
-        <div class="participants__block-header">
-          <span class="participants__block-number">04</span>
-          <h3>What to Expect</h3>
-        </div>
-        <div class="expect__grid">
-          <div class="expect__item glass tilt-card">
-            <span class="expect__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.38 3.46L16 2l-4 4-4-4L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6l-1 8h14l-1-8h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"/></svg>
-            </span>
-            <div>
-              <strong>Gear Provided</strong>
-              <p>Climbing shoes included — just wear comfortable clothes.</p>
-            </div>
-          </div>
-          <div class="expect__item glass tilt-card">
-            <span class="expect__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </span>
-            <div>
-              <strong>One Session</strong>
-              <p>There is only one session available for everyone. Follow our Instagram for dates.</p>
-            </div>
-          </div>
-          <div class="expect__item glass tilt-card">
-            <span class="expect__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </span>
-            <div>
-              <strong>Location</strong>
-              <p><a href="https://grandriverrocks.com/waterloo/" target="_blank" rel="noopener" class="link">Grand River Rocks — Waterloo</a></p>
-            </div>
-          </div>
-          <div class="expect__item glass tilt-card">
-            <span class="expect__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </span>
-            <div>
-              <strong>Stay Updated</strong>
-              <p><a href="https://www.instagram.com/access2climbing/" target="_blank" rel="noopener" class="link">@access2climbing on Instagram</a></p>
-            </div>
-          </div>
-        </div>
+        <a href="donate.html" class="donor-strip__more">More ways to support &rarr;</a>
       </div>
     </div>
-  </section>
-
-  <!-- ============================================================
-       DONORS / PARTNERS SECTION
-       ============================================================ -->
-  <section id="donors" class="section donors">
-    <div class="container">
-      <div class="section__label reveal">For Donors &amp; Partners</div>
-      <h2 class="section__title reveal">Help a youth reach <span class="accent">new heights</span></h2>
-      <p class="section__subtitle reveal">
-        Your contribution directly funds free bouldering sessions — entry fees, shoe rentals, and supervision. Every dollar removes a barrier.
-      </p>
-
-      <div class="donors__grid">
-        <div class="donors__card glass tilt-card reveal">
-          <div class="donors__card-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-          </div>
-          <h3>Donate</h3>
-          <p>One-time or recurring donations through GoFundMe go directly to session costs and youth access.</p>
-          <a href="https://gofund.me/8d9cdc7f2" target="_blank" rel="noopener" class="btn btn--primary magnetic-btn" id="donate-btn">
-            Donate on GoFundMe
-          </a>
-        </div>
-
-        <div class="donors__card glass tilt-card reveal">
-          <div class="donors__card-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a4 4 0 00-8 0v2"/></svg>
-          </div>
-          <h3>Become a Sponsor</h3>
-          <p>Want to sponsor a full session, provide in-kind support, or become a corporate partner? Let's talk.</p>
-          <a href="mailto:access2climbing@gmail.com" class="btn btn--outline magnetic-btn">
-            Email Us to Sponsor
-          </a>
-        </div>
-
-        <div class="donors__card glass tilt-card reveal">
-          <div class="donors__card-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          </div>
-          <h3>Partner With Us</h3>
-          <p>We're always looking for community organizations, schools, and gyms to collaborate with and expand our reach.</p>
-          <a href="mailto:outreach.access2climbing@gmail.com" class="btn btn--outline magnetic-btn">
-            Outreach
-          </a>
-        </div>
-      </div>
-
-      <!-- PARTNER HIGHLIGHT -->
-      <div class="donors__partner-highlight glass reveal">
-        <div class="donors__partner-logo">
-          <img src="LOGO Waterloo (black).png" alt="Grand River Rocks Logo" style="max-width: 120px; height: auto;" />
-        </div>
-        <div class="donors__partner-text">
-          <h3>Proud Partner</h3>
-          <p>
-            Sessions hosted at <a href="https://grandriverrocks.com/waterloo/" target="_blank" rel="noopener" class="link">Grand River Rocks — Waterloo</a>.
-            Follow them at <a href="https://www.instagram.com/grr_wat/" target="_blank" rel="noopener" class="link">@grr_wat</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== FAQ ===================== -->
-  <section id="faq" class="section faq">
-    <div class="container">
-      <div class="section__label reveal">FAQ</div>
-      <h2 class="section__title reveal">Frequently asked <span class="accent">questions</span></h2>
-      <div class="faq__list">
-
-        <div class="faq__item reveal">
-          <button class="faq__question" id="faq-q1">
-            <span>Is it really free?</span>
-            <span class="faq__chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
-          </button>
-          <div class="faq__answer" id="faq-a1">
-            <p>Yes! Every session is 100% free for participants. Although we do give <strong>priority</strong> to first-time participants. Entry fees, shoe rentals, and supervision costs are covered by community grants and donations.</p>
-          </div>
-        </div>
-
-        <div class="faq__item reveal">
-          <button class="faq__question" id="faq-q2">
-            <span>Do I need climbing experience?</span>
-            <span class="faq__chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
-          </button>
-          <div class="faq__answer" id="faq-a2">
-            <p>Not at all! Sessions are designed for beginners. Certified gym staff at <a href="https://grandriverrocks.com/waterloo/" target="_blank" rel="noopener" class="link">Grand River Rocks</a> will guide you through everything — no prior experience or equipment needed.</p>
-          </div>
-        </div>
-
-        <div class="faq__item reveal">
-          <button class="faq__question" id="faq-q3">
-            <span>Who can participate?</span>
-            <span class="faq__chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
-          </button>
-          <div class="faq__answer" id="faq-a3">
-            <p>This project was created for newcomer, refugee, low-income, and racialized youth aged 13–17 (Grades 9–12) in the Waterloo Region who face social, cultural and financial barriers while entering the sport.</p>
-          </div>
-        </div>
-
-        <div class="faq__item reveal">
-          <button class="faq__question" id="faq-q4">
-            <span>How often are sessions?</span>
-            <span class="faq__chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
-          </button>
-          <div class="faq__answer" id="faq-a4">
-            <p>We hold sessions monthly. <strong>Notice:</strong> To accommodate as many youth as possible, there is only one session available for everyone. Check our Instagram <a href="https://www.instagram.com/access2climbing/" target="_blank" rel="noopener" class="link">@access2climbing</a> for updates!</p>
-          </div>
-        </div>
-
-        <div class="faq__item reveal">
-          <button class="faq__question" id="faq-q5">
-            <span>Where are sessions held?</span>
-            <span class="faq__chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
-          </button>
-          <div class="faq__answer" id="faq-a5">
-            <p>All sessions take place at <a href="https://grandriverrocks.com/waterloo/" target="_blank" rel="noopener" class="link">Grand River Rocks — Waterloo</a>, our partner gym.</p>
-          </div>
-        </div>
-
-        <div class="faq__item reveal">
-          <button class="faq__question" id="faq-q6">
-            <span>Is there a waiver required?</span>
-            <span class="faq__chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
-          </button>
-          <div class="faq__answer" id="faq-a6">
-            <p>Yes. All parents/guardians must complete the waiver at <a href="https://grandriverrocks.com/waterloo/waiver/" target="_blank" rel="noopener" class="link">Grand River Rocks</a> and complete the waiver form with us during registration.</p>
-          </div>
-        </div>
-
-        <div class="faq__item reveal">
-          <button class="faq__question" id="faq-q7">
-            <span>Are spots guaranteed?</span>
-            <span class="faq__chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
-          </button>
-          <div class="faq__answer" id="faq-a7">
-            <p><strong>Spots are limited and not guaranteed.</strong> We confirm eligible registrations on a first-come, first-served basis. Sign up early to secure your place! We will contact you through email or SMS</p>
-          </div>
-        </div>
-
-        <div class="faq__item reveal">
-          <button class="faq__question" id="faq-q8">
-            <span>How can I donate or sponsor?</span>
-            <span class="faq__chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
-          </button>
-          <div class="faq__answer" id="faq-a8">
-            <p>Visit our <a href="https://gofund.me/8d9cdc7f2" target="_blank" rel="noopener" class="link">GoFundMe page</a> or email <a href="mailto:access2climbing@gmail.com" class="link">access2climbing@gmail.com</a> for sponsorship inquiries. You can also send an E-transfer to access2climbing@gmail.com </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== TEAM ===================== -->
-  <section id="team" class="section team">
-    <div class="container">
-      <div class="section__label reveal">Our Team</div>
-      <h2 class="section__title reveal">The people behind the <span class="accent">mission</span></h2>
-      <p class="section__subtitle reveal">
-        Access to Climbing is student-led and adult-supervised. Our team is passionate about growth, sport, and community.
-      </p>
-      <div class="team__grid">
-        <div class="team__card glass tilt-card reveal">
-          <div class="team__avatar">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          </div>
-          <h3>Artur Tashbolotov</h3>
-          <p class="team__role">Project &amp; Fundraising Lead</p>
-        </div>
-        <div class="team__card glass tilt-card reveal">
-          <div class="team__avatar">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          </div>
-          <h3>Ahmed Farooq</h3>
-          <p class="team__role">Logistics Lead</p>
-        </div>
-        <div class="team__card glass tilt-card reveal">
-          <div class="team__avatar">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          </div>
-          <h3>Natalia Tashbolotova</h3>
-          <p class="team__role">Adult Advisor</p>
-        </div>
-        <div class="team__card glass tilt-card reveal">
-          <div class="team__avatar">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          </div>
-          <h3>Summer Maloor</h3>
-          <p class="team__role">Session Experience Lead</p>
-        </div>
-        <div class="team__card glass tilt-card reveal">
-          <div class="team__avatar">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          </div>
-          <h3>Minnie Yan</h3>
-          <p class="team__role">Communications Lead</p>
-        </div>
-      </div>
-      <!-- <p class="team__contact reveal">
-        Want to join our team or volunteer? Reach out at
-        <a href="mailto:outreach.access2climbing@gmail.com" class="link">outreach.access2climbing@gmail.com</a>
-      </p> -->
-    </div>
-  </section>
-
-  <!-- ===================== CONTACT STRIP ===================== -->
-  <section id="contact" class="section contact-strip">
-    <div class="container contact-strip__inner">
-      <div class="contact-strip__item reveal">
-        <span class="contact-strip__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </span>
-        <div>
-          <strong>General</strong>
-          <a href="mailto:access2climbing@gmail.com">access2climbing@gmail.com</a>
-        </div>
-      </div>
-      <div class="contact-strip__item reveal">
-        <span class="contact-strip__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        </span>
-        <div>
-          <strong>Outreach</strong>
-          <a href="mailto:outreach.access2climbing@gmail.com">outreach.access2climbing@gmail.com</a>
-        </div>
-      </div>
-      <div class="contact-strip__item reveal">
-        <span class="contact-strip__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        </span>
-        <div>
-          <strong>Instagram</strong>
-          <a href="https://www.instagram.com/access2climbing/" target="_blank" rel="noopener">@access2climbing</a>
-        </div>
-      </div>
-      <div class="contact-strip__item reveal">
-        <span class="contact-strip__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-        </span>
-        <div>
-          <strong>GoFundMe</strong>
-          <a href="https://gofund.me/8d9cdc7f2" target="_blank" rel="noopener">Donate Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
@@ -600,14 +281,17 @@
         <a href="mailto:access2climbing@gmail.com" aria-label="Email">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
-        <a href="https://grandriverrocks.com/waterloo/" target="_blank" rel="noopener" aria-label="Grand River Rocks">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l6-6 4 4 8-10"/><path d="M14 15l3-3 4 4"/></svg>
-        </a>
       </div>
+      <nav class="footer__nav" style="display:flex;gap:24px;margin:8px 0;flex-wrap:wrap;justify-content:center;">
+        <a href="about.html" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">About</a>
+        <a href="faq.html" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">FAQ</a>
+        <a href="donate.html" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">Donate</a>
+        <a href="https://grandriverrocks.com/waterloo/" target="_blank" rel="noopener" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">Grand River Rocks</a>
+      </nav>
       <p class="footer__copy">&copy; 2026 Access to Climbing. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
