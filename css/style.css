@@ -1629,3 +1629,135 @@ button {
 .recaps--light .recaps__card p   { color: #4a5068; }
 .recaps--light .recaps__card-label { color: var(--clr-accent); }
 .recaps--light .recaps__embed-wrapper { border-color: #e2e5ee; }
+
+/* ============================================================
+   FUTURE DATES (Upcoming Sessions)
+   ============================================================ */
+.future-dates {
+  background: var(--clr-bg);
+}
+.future-dates__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 8px;
+}
+.future-dates__card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 32px;
+  border-radius: var(--radius-lg);
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+.future-dates__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--clr-accent), var(--clr-accent2));
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+.future-dates__card:hover::before {
+  opacity: 1;
+}
+.future-dates__card:hover {
+  border-color: rgba(255, 170, 6, 0.25);
+  box-shadow: 0 12px 40px rgba(255, 170, 6, 0.08);
+  transform: translateY(-4px);
+}
+
+/* Calendar block */
+.future-dates__calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 72px;
+  height: 80px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(255, 170, 6, 0.12), rgba(255, 170, 6, 0.04));
+  border: 1px solid rgba(255, 170, 6, 0.2);
+  flex-shrink: 0;
+}
+.future-dates__month {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--clr-accent);
+  line-height: 1;
+  margin-bottom: 2px;
+}
+.future-dates__day {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-2xl);
+  font-weight: 900;
+  color: var(--clr-white);
+  line-height: 1;
+}
+
+/* Info block */
+.future-dates__info h3 {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-lg);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--clr-white);
+  margin-bottom: 8px;
+}
+.future-dates__time,
+.future-dates__location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-sm);
+  color: var(--clr-text-dim);
+  margin-bottom: 4px;
+}
+.future-dates__time svg,
+.future-dates__location svg {
+  flex-shrink: 0;
+  color: var(--clr-accent);
+  opacity: 0.7;
+}
+
+/* "Next Up" badge */
+.future-dates__badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--clr-accent);
+  color: var(--clr-navy);
+  font-family: var(--ff-heading);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  animation: badgePulse 2.5s ease-in-out infinite;
+}
+@keyframes badgePulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 170, 6, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(255, 170, 6, 0); }
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .future-dates__grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
