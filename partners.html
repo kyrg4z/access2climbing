@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partners — Access to Climbing</title>
+  <meta name="description" content="Meet the community partners and organizations supporting Access to Climbing in Waterloo Region." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="scroll-progress" class="scroll-progress"></div>
+  <canvas id="particles" class="particles-canvas"></canvas>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="main-nav" class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text">ACCESS<span class="accent">2</span>CLIMBING</span>
+      </a>
+      <button id="nav-toggle" class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-links" class="nav__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="partners.html" class="nav__active">Partners</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li>
+          <a href="index.html#how-it-works" class="nav__cta">Sign Up Free</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <div class="page-header" style="margin-bottom: 24px">
+    <div class="container">
+      <h1 class="section__title">Our <span class="accent">Sponsors</span></h1>
+      <p class="section__subtitle">
+        Meet the organizations helping us bring climbing to youth in Waterloo Region.
+      </p>
+    </div>
+  </div>
+
+  <!-- ===================== PARTNERS GRID ===================== -->
+  <section class="section partners" style="padding-top: 0;">
+    <div class="container">
+      
+      <!-- ===================== LOGO GRID SETUP ===================== -->
+      <!-- 
+        Flexbox setup with fixed item widths (200px) so all cards remain equal size.
+      -->
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 24px;">
+
+        <!-- PARTNER 1: AFRICAN FAMILY REVIVAL ORGANIZATION -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/african-family-revival-organization.png" alt="African Family Revival Organization Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 2: ASSOCIATION OF LIBERIAN IMMIGRANTS -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/association-of-liberian-immigrants.png" alt="Association of Liberian Immigrants Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 3: BUSINESS AND EDUCATION PARTNERSHIP OF WATERLOO REGION -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/business-and-education-partnership-of-waterloo-region.png" alt="Business and Education Partnership of Waterloo Region Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 4: CITY OF KITCHENER -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/city-of-kitchener.png" alt="City of Kitchener Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 5: CITY OF WATERLOO -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/city-of-waterloo.png" alt="City of Waterloo Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 6: ETHIOPIAN ASSOCIATION OF KW -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/ethiopian-association-of-kw.png" alt="Ethiopian Association of KW Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 7: FRONT DOOR -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/frontdoor.png" alt="Front Door Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 8: GIRLS E-MENTORSHIP -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/girls-e-mentorship.png" alt="Girls E-Mentorship Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 9: GRAND RIVER ROCKS -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/grand-river-rocks.png" alt="Grand River Rocks Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 10: MT SPACE -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/mt-space.png" alt="MT Space Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 11: ONE ROOF YOUTH -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/one-roof-youth.png" alt="One Roof Youth Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 12: RECEPTION HOUSE -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/reception-house.png" alt="Reception House Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 13: RHYTHMS AND BLUES CAMBRIDGE -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/rythms-and-blues-cambridge.png" alt="Rhythms and Blues Cambridge Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 14: WATERLOO REGION CHINESE CANADIAN ASSOCIATION -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/waterloo-region-chinese-canadian-association.png" alt="Waterloo Region Chinese Canadian Association Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 15: WATERLOO REGION DISTRICT SCHOOL BOARD -->
+        <a href="#" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/waterloo-region-district-schoolboard.png" alt="Waterloo Region District School Board Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+        <!-- PARTNER 16: YMCA CANADA -->
+        <a href="https://www.ymca.ca/" target="_blank" rel="noopener" class="glass tilt-card reveal" style="display: flex; align-items: center; justify-content: center; padding: 32px; border-radius: var(--radius-md); transition: transform var(--transition), border-color var(--transition); aspect-ratio: 1 / 1; width: 200px; flex: 0 0 200px;">
+          <img src="images/partners/ymca-canada.png" alt="YMCA Canada Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-text">ACCESS<span class="accent">2</span>CLIMBING</span>
+      </div>
+      <p class="footer__tagline">Breaking barriers. Building futures.</p>
+      <div class="footer__links">
+        <a href="https://www.instagram.com/access2climbing/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://gofund.me/8d9cdc7f2" target="_blank" rel="noopener" aria-label="GoFundMe">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </a>
+        <a href="mailto:access2climbing@gmail.com" aria-label="Email">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+      <nav class="footer__nav" style="display:flex;gap:24px;margin:8px 0;flex-wrap:wrap;justify-content:center;">
+        <a href="index.html" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">Home</a>
+        <a href="about.html" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">About</a>
+        <a href="faq.html" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">FAQ</a>
+        <a href="partners.html" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">Partners</a>
+        <a href="donate.html" style="font-family:var(--ff-heading);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:1px;color:var(--clr-text-dim);">Donate</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 Access to Climbing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
